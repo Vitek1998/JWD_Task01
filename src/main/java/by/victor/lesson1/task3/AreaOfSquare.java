@@ -6,9 +6,11 @@ public class AreaOfSquare {
     //s_large = a^2, a = sqrt(s_large), d = a = b(sqrt(2)),
     //b = sqrt(s_large/2),  s_small = b^2 = s_large/2
     public static Double getArea (Double areaOfLargerSquare){
-        if(areaOfLargerSquare == null || areaOfLargerSquare < 0.0)
+        if (areaOfLargerSquare == null || areaOfLargerSquare < 0.0) {
             throw new IllegalArgumentException("Area should be positive");
-        else
-            return areaOfLargerSquare/2;
+        }
+        else {
+            return areaOfLargerSquare / 2;
+        }
     }
 }
